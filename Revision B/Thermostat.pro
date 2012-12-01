@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/Jeremy/Documents/eagle/Revision B/Thermostat.brd
 
-Start at      : 21:12:31 (11/26/2012)
-End at        : 21:12:33 (11/26/2012)
-Elapsed time  : 00:00:02
+Start at      : 18:36:10 (11/30/2012)
+End at        : 18:36:11 (11/30/2012)
+Elapsed time  : 00:00:01
 
-Signals       :    26   RoutingGrid: 50 mil  Layers: 1
-Connections   :    30   predefined:  13 ( 0 Vias )
+Signals       :    24   RoutingGrid: 50 mil  Layers: 1
+Connections   :    42   predefined:  9 ( 0 Vias )
 
-Router memory :   6800
+Router memory :   5300
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:02  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :       105         0         0         0         0
-max. Level        :         3         0         0         0         0
+Time per pass     :  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         4         0         0         0         0
+max. Level        :         5         0         0         0         0
 max. Total        :         4         0         0         0         0
 
-Routed            :         5         5         5         5         5
+Routed            :        11        11        11        11        11
 Vias              :         0         0         0         0         0
-Resolution        :    60.0 %    60.0 %    60.0 %    60.0 %    60.0 %
+Resolution        :    47.6 %    47.6 %    47.6 %    47.6 %    47.6 %
 
-Final             : 60.0% finished
+Final             : 47.6% finished
