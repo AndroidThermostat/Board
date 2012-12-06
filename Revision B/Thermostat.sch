@@ -11297,6 +11297,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="T2" library="android-thermostat" deviceset="MOSFET" device=""/>
 <part name="T1" library="android-thermostat" deviceset="MOSFET" device=""/>
 <part name="C2" library="rcl" deviceset="CPOL-US" device="E2-5"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0204/5"/>
 </parts>
 <sheets>
 <sheet>
@@ -11308,7 +11309,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="10U" gate="G$1" x="68.58" y="86.36"/>
 <instance part="5V" gate="G$1" x="111.76" y="54.61" rot="R270"/>
 <instance part="GND" gate="G$1" x="111.76" y="21.59" rot="R90"/>
-<instance part="P4" gate="G$1" x="142.24" y="36.83" rot="R180"/>
+<instance part="P4" gate="G$1" x="149.86" y="36.83" rot="R180"/>
 <instance part="P6" gate="G$1" x="49.53" y="13.97"/>
 <instance part="P5" gate="G$1" x="49.53" y="-15.24"/>
 <instance part="P7" gate="G$1" x="49.53" y="40.64"/>
@@ -11344,6 +11345,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="T2" gate="G$1" x="54.61" y="21.59" rot="R90"/>
 <instance part="T1" gate="G$1" x="54.61" y="48.26" rot="R90"/>
 <instance part="C2" gate="G$1" x="125.73" y="34.29"/>
+<instance part="R4" gate="G$1" x="134.874" y="36.83"/>
 </instances>
 <busses>
 </busses>
@@ -11603,8 +11605,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="U$1" gate="G$1" pin="OUT-2"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="111.76" y1="36.83" x2="125.73" y2="36.83" width="0.3048" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="129.794" y1="36.83" x2="125.73" y2="36.83" width="0.3048" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P4" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="36.83" x2="134.62" y2="36.83" width="0.3048" layer="91"/>
+<wire x1="139.954" y1="36.83" x2="142.24" y2="36.83" width="0.3048" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -123,6 +123,7 @@
 <text x="10.0203" y="6.096" size="2.54" layer="121" font="vector" rot="R90">Android Thermostat</text>
 <text x="13.3223" y="6.096" size="2.54" layer="121" font="vector" rot="R90">Rev. B</text>
 <text x="10.7823" y="6.096" size="2.54" layer="122" font="vector" rot="MR90">Android Thermostat</text>
+<text x="36.83" y="31.75" size="1.27" layer="121">150k</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -1475,6 +1476,34 @@ grid 2.032 mm, diameter 5 mm</description>
 <text x="2.54" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
 </package>
+<package name="0204/5">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0204, grid 5 mm</description>
+<wire x1="2.54" y1="0" x2="2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-1.778" y1="0.635" x2="-1.524" y2="0.889" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.524" y2="-0.889" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.889" x2="1.778" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="0.889" x2="1.778" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.778" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-1.524" y1="0.889" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="0.762" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="-1.143" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="-1.143" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.0066" y="1.1684" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.1336" y="-2.3114" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
+<rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1700,6 +1729,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="T2" library="android-thermostat" package="TRANSISTOR" value="MOSFET" x="28.4543" y="23.622" rot="R90"/>
 <element name="T1" library="android-thermostat" package="TRANSISTOR" value="MOSFET" x="26.6763" y="35.052" rot="R90"/>
 <element name="C2" library="rcl" package="E2-5" value="" x="39.37" y="38.862"/>
+<element name="R4" library="rcl" package="0204/5" value="" x="37.084" y="34.036" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$20">
@@ -1936,7 +1966,6 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$4">
 <contactref element="U$1" pad="DATA-2"/>
 <contactref element="C2" pad="+"/>
-<contactref element="P4" pad="1"/>
 <wire x1="27.6923" y1="48.26" x2="27.6923" y2="47.4917" width="0.6096" layer="1"/>
 <wire x1="27.6923" y1="47.4917" x2="28.956" y2="46.228" width="0.6096" layer="1"/>
 <wire x1="28.956" y1="46.228" x2="29.21" y2="46.228" width="0.6096" layer="1"/>
@@ -1944,8 +1973,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="32.258" y1="49.276" x2="34.29" y2="49.276" width="0.6096" layer="1"/>
 <wire x1="34.29" y1="49.276" x2="38.354" y2="45.212" width="0.6096" layer="1"/>
 <wire x1="38.354" y1="45.212" x2="38.354" y2="38.862" width="0.6096" layer="1"/>
-<wire x1="38.354" y1="38.862" x2="38.354" y2="34.0297" width="0.6096" layer="1"/>
-<wire x1="38.354" y1="34.0297" x2="35.5663" y2="31.242" width="0.6096" layer="1"/>
+<contactref element="R4" pad="1"/>
+<wire x1="38.354" y1="38.862" x2="38.354" y2="35.306" width="0.6096" layer="1"/>
+<wire x1="38.354" y1="35.306" x2="39.624" y2="34.036" width="0.6096" layer="1"/>
+</signal>
+<signal name="N$5">
+<contactref element="R4" pad="2"/>
+<contactref element="P4" pad="1"/>
+<wire x1="35.5663" y1="31.242" x2="35.5663" y2="33.0137" width="0.6096" layer="1"/>
+<wire x1="35.5663" y1="33.0137" x2="34.544" y2="34.036" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>
