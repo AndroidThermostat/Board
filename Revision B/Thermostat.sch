@@ -11258,7 +11258,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="10U" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH2"/>
 <part name="5V" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
 <part name="GND" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
-<part name="P4" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="P43" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
 <part name="P6" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
 <part name="P5" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
 <part name="P7" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
@@ -11303,7 +11303,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="10U" gate="G$1" x="68.58" y="86.36"/>
 <instance part="5V" gate="G$1" x="111.76" y="54.61" rot="R270"/>
 <instance part="GND" gate="G$1" x="111.76" y="21.59" rot="R90"/>
-<instance part="P4" gate="G$1" x="149.86" y="36.83" rot="R180"/>
+<instance part="P43" gate="G$1" x="149.86" y="36.83" rot="R180"/>
 <instance part="P6" gate="G$1" x="49.53" y="13.97"/>
 <instance part="P5" gate="G$1" x="49.53" y="-15.24"/>
 <instance part="P7" gate="G$1" x="49.53" y="40.64"/>
@@ -11590,7 +11590,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="P4" gate="G$1" pin="1"/>
+<pinref part="P43" gate="G$1" pin="1"/>
 <wire x1="139.954" y1="36.83" x2="142.24" y2="36.83" width="0.3048" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
