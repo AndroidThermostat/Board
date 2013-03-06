@@ -1963,8 +1963,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.089928125" y1="1.716365625" x2="49.089928125" y2="7.558371875" width="0.6096" layer="1"/>
 <wire x1="49.089928125" y1="7.558371875" x2="48.2663" y2="8.382" width="0.6096" layer="1"/>
 <wire x1="49.089928125" y1="1.716365625" x2="44.511634375" y2="1.716365625" width="0.6096" layer="1"/>
-<wire x1="44.511634375" y1="1.716365625" x2="36.322" y2="9.906" width="0.6096" layer="1"/>
-<wire x1="36.322" y1="9.906" x2="33.5343" y2="9.906" width="0.6096" layer="1"/>
+<wire x1="44.511634375" y1="1.716365625" x2="35.814" y2="9.906" width="0.6096" layer="1"/>
+<wire x1="35.814" y1="9.906" x2="33.5343" y2="9.906" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="U$2" pad="VI"/>
